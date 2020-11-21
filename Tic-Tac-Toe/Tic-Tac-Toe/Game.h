@@ -69,7 +69,6 @@ void game()
 
         else if (player == 2)
         {
-            cout << "Player2's turn - O" << endl;
             square[number] = 'O';
             player = 1;
         }
