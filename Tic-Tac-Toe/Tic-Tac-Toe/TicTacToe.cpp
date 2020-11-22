@@ -1,15 +1,16 @@
 #include <iostream>
-#include <iomanip>
-#include <stdlib.h>
 #include "StartingPoint.h"
 #include "Menu.h"
 #include "Game.h"
 #include "Info.h"
+#include "Rules.h"
 using namespace std;
 
 int main()
 {
-    system("color B");  //change console color
+    //change console color
+    system("color B");  
 
-    startingPoint();    //print out starting point
+    //print out starting point
+    startingPoint();
 }

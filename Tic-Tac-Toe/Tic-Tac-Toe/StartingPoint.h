@@ -5,7 +5,7 @@ using namespace std;
 
 void startingPoint()
 {
-    //print out game title and menu
+    //print out game title
 
     cout << "        __          __        _                                   " << endl;
     cout << "        \\ \\        / /       | |                                 " << endl;
@@ -28,5 +28,6 @@ void startingPoint()
     cout << "    | |    | | | (__       | |    | (_| | | (__       | |    | (_) | |  __/" << endl;
     cout << "    |_|    |_|  \\___|      |_|     \\__,_|  \\___|      |_|      ___/   \\___|" << endl;
 
+    //go to menu
     menu();
 }

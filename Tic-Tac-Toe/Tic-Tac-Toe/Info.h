@@ -7,6 +7,10 @@ void info()
 {
     //print out our team info
 
+    cout << setw(50) << " ~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << setw(50) << "        TEAM INFO        " << endl;
+    cout << setw(50) << " ~~~~~~~~~~~~~~~~~~~~~~~~~" << endl << endl << endl;
+
 	cout << "Hello we are team Delta!" << endl;
 	cout << "We are 9th grade students from PGKPI." << endl << endl;
 	cout << "Here are our names and positions in this project:" << endl;
@@ -19,7 +23,7 @@ void info()
 
     cout << "Want to go back to the menu? - Y/N" << endl;   //check if user wants to go back to the menu
 
-    char answer;    //variable for user answer
+    char answer;
     bool valid = false;
 
     while (valid == false)

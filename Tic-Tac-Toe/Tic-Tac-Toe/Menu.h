@@ -2,6 +2,7 @@
 #include <iomanip>
 #include "Game.h"
 #include "Info.h"
+#include "Rules.h"
 using namespace std;
 
 void menu()
@@ -38,7 +39,7 @@ void menu()
         game();     //send user to the game
     }
     if (num == 2) { 
-        //info();   //send user to the rules
+        rules();   //send user to the rules
     }
     if (num == 3) {
         info();     //send user to info
