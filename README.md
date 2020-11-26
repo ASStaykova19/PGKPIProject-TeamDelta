@@ -1,4 +1,7 @@
 # PGKPI-Project-TeamDelta
+
+![logo (1).](https://i.imgur.com/miL8jOz.png)
+
 Team Delta - Alexandra Staykova, Tereza Opanska, Ivelin Vasilev, Alexander Klingenberg, Miroslav Ivanov
 
 Това е нашият отбор за проектната дейност - Math Games.
