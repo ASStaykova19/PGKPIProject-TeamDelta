@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     //change console color
-    system("color B");  
+    system("color B"); 
 
     //print out starting point
     startingPoint();

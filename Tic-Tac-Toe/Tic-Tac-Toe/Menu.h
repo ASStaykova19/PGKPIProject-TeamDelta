@@ -38,7 +38,7 @@ void menu()
     if (num == 1) {
         game();     //send user to the game
     }
-    if (num == 2) {
+    if (num == 2) { 
         rules();   //send user to the rules
     }
     if (num == 3) {
