@@ -28,9 +28,9 @@ void game()
             {
                 cout << "Invalid number. Please enter a valid number." << endl << endl;
                 checkNum = false;
-            }
-
-            else    //valid input
+            } 
+            
+            else
             {
                 checkNum = true;
             }

@@ -23,7 +23,6 @@ void menu()
 
     //print out game menu.
 
-    int num;
     cout << setw(4) << endl;
     cout << setw(4) << endl;
     cout << setw(4) << endl;
@@ -41,9 +40,26 @@ void menu()
     cout << setw(51) << "{                    }" << endl;
     cout << setw(4) << endl;
 
-    cout << setw(53) << "    Enter your choice:    " << endl;   //enter operation choice
+    cout << setw(49) << "    Enter your choice: ";   //enter operation choice
 
-    cin >> num;
+    int num;
+    bool checkNum = false;
+
+    while (checkNum == false)   //check if the user input is valid
+    {
+        cin >> num;
+
+        if (num < 1 || num > 4)     //invalid input
+        {
+            cout << "Invalid number. Please enter a valid number." << endl << endl;
+            checkNum = false;
+        }
+
+        else
+        {
+            checkNum = true;
+        }
+    }
 
     cout << setw(4) << endl;
     cout << setw(4) << endl;
