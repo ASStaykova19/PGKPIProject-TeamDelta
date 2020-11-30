@@ -7,7 +7,7 @@ using namespace std;
 
 void title()
 {
-    //print out game title
+    // Print out game title
 
     cout << "  _______   _            _______                    _______                " << endl;
     cout << " |__   __| (_)          |__   __|                  |__   __|               " << endl;
@@ -21,7 +21,7 @@ void menu()
 {
     title();
 
-    //print out game menu.
+    // Print out game menu.
 
     cout << setw(4) << endl;
     cout << setw(4) << endl;
@@ -40,16 +40,16 @@ void menu()
     cout << setw(51) << "{                    }" << endl;
     cout << setw(4) << endl;
 
-    cout << setw(49) << "    Enter your choice: ";   //enter operation choice
+    cout << setw(49) << "    Enter your choice: ";  // Enter operation choice
 
     int num;
     bool checkNum = false;
 
-    while (checkNum == false)   //check if the user input is valid
+    while (checkNum == false)   // Check if the user input is valid
     {
         cin >> num;
 
-        if (num < 1 || num > 4)     //invalid input
+        if (num < 1 || num > 4) // Invalid input
         {
             cout << "Invalid number. Please enter a valid number." << endl << endl;
             checkNum = false;
@@ -66,20 +66,20 @@ void menu()
     cout << setw(4) << endl;
 
     if (num == 1) {
-        system("CLS");  //clear the console
-        game();     //send user to the game
+        system("CLS");  // Clear the console
+        game();         // Send user to the game
     }
     if (num == 2) {
-        system("CLS");  //clear the console
-        rules();   //send user to the rules
+        system("CLS");  // Clear the console
+        rules();        // Send user to the rules
     }
     if (num == 3) {
-        system("CLS");  //clear the console
-        info();     //send user to info
+        system("CLS");  //Clear the console
+        info();         //Send user to info
     }
     if (num == 4) {
-        system("CLS");  //clear the console
-        exit(0);    //end the programme
+        system("CLS");  //Clear the console
+        exit(0);        //End the programme
     }
 }
 
@@ -87,7 +87,7 @@ void rules()
 {
     title();
 
-    //print out the game rules
+    // Print out the game rules
 
     cout << setw(4) << endl;
     cout << setw(4) << endl;
@@ -105,7 +105,7 @@ void rules()
     cout << "	4. If a player manages to place their symbol three times in a row (horizontally, vertically or diagonally) that player wins." << endl;
     cout << "	5. Start a new game and have fun!" << endl << endl;
 
-    cout << "Do you want to go back to the menu? - Y/N" << endl;   //check if user wants to go back to the menu
+    cout << "Do you want to go back to the menu? - Y/N" << endl;   // Check if user wants to go back to the menu
 
     char answer;
     bool valid = false;
@@ -114,20 +114,20 @@ void rules()
     {
         cin >> answer;
 
-        if (answer == 'Y' || answer == 'y')     //go back to the menu
+        if (answer == 'Y' || answer == 'y') // Go back to the menu
         {
-            system("CLS");      //clear the console
-            menu();     //print out game menu
+            system("CLS");  // Clear the console
+            menu();         // Print out game menu
             valid = true;
         }
 
-        else if (answer == 'N' || answer == 'n')    //exit the programme
+        else if (answer == 'N' || answer == 'n')    // Exit the programme
         {
             exit(0);
             valid = true;
         }
 
-        else    //invalid user input
+        else   // Invalid user input
         {
             cout << "You entered an invalid statement. Please try again." << endl;
             valid = false;
@@ -139,7 +139,7 @@ void info()
 {
     title();
 
-    //print out our team info
+    // Print out our team info
 
     cout << setw(4) << endl;
     cout << setw(4) << endl;
@@ -160,7 +160,7 @@ void info()
     cout << "      Tereza Opanska - Code Checker" << endl << endl;
     cout << "Thank you for playing our game! We hope you enjoy it!" << endl << endl;
 
-    cout << "Do you want to go back to the menu? - Y/N" << endl;   //check if user wants to go back to the menu
+    cout << "Do you want to go back to the menu? - Y/N" << endl;    // Check if user wants to go back to the menu
 
     char answer;
     bool valid = false;
@@ -169,20 +169,20 @@ void info()
     {
         cin >> answer;
 
-        if (answer == 'Y' || answer == 'y')     //go back to the menu
+        if (answer == 'Y' || answer == 'y') // Go back to the menu
         {
-            system("CLS");      //clear the console
-            menu();     //print out menu
+            system("CLS");  // Clear the console
+            menu();         // Print out menu
             valid = true;
         }
 
-        else if (answer == 'N' || answer == 'n')    //exit the programme
+        else if (answer == 'N' || answer == 'n')    // Exit the programme
         {
             exit(0);
             valid = true;
         }
 
-        else    //invalid user input
+        else    // Invalid user input
         {
             cout << "You entered an invalid statement. Please try again." << endl;
             valid = false;

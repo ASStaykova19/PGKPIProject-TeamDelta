@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    //change console color
+    // Change console color
     system("color B");
 
-    //print out starting point
+    // Print out starting point
     menu();
 }
