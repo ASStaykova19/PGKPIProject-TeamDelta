@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include "Functions.h"
+#include "functions.h"
 #include "menu.h"
 
 using namespace std;
@@ -20,19 +20,28 @@ void game()
         cout << "Player" << player << "'s turn" << endl;
         cout << "Choose a sell number:" << endl;
 
-        while (checkNum == false) // Check if the user input is valid
+        while (checkNum == false)
         {
-            cin >> number;
-
-            if (number > 9 || number < 1 || square[number] == 'X' || square[number] == 'O') //Invalid input
+            if (cin >> number)
             {
-                cout << endl << "Invalid number. Please enter a valid number." << endl << endl;
-                checkNum = false;
+                if (number > 9 || number < 1 || square[number] == 'X' || square[number] == 'O') //Invalid input
+                {
+                    cout << endl << "Invalid input. Please enter a valid sell number." << endl << endl;
+                    checkNum = false;
+                }
+
+                else    // Valid input
+                {
+                    checkNum = true;
+                }
             }
 
-            else    //Valid input
+            else    // The user entered a character
             {
-                checkNum = true;
+                cout << endl << "Invalid input. Please enter a valid sell number." << endl << endl;
+                cin.clear();
+                cin.ignore();
+                checkNum = false;
             }
         }
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include "menu.h"
-#include "Functions.h"
+#include "functions.h"
 
 using namespace std;
 
@@ -42,22 +42,31 @@ void menu()
 
     cout << setw(49) << "    Enter your choice: ";  // Enter operation choice
 
-    int num;
+    int number;
     bool checkNum = false;
 
-    while (checkNum == false)   // Check if the user input is valid
+    while (checkNum == false)
     {
-        cin >> num;
-
-        if (num < 1 || num > 4) // Invalid input
+        if (cin >> number)
         {
-            cout << "Invalid number. Please enter a valid number." << endl << endl;
-            checkNum = false;
+            if (number > 4 || number < 1) //Invalid input
+            {
+                cout << endl << "Invalid input. Please enter a valid operation number." << endl << endl;
+                checkNum = false;
+            }
+
+            else    // Valid input
+            {
+                checkNum = true;
+            }
         }
 
-        else
+        else    // The user entered a character
         {
-            checkNum = true;
+            cout << endl << "Invalid input. Please enter a valid operation number." << endl << endl;
+            cin.clear();
+            cin.ignore();
+            checkNum = false;
         }
     }
 
@@ -65,19 +74,19 @@ void menu()
     cout << setw(4) << endl;
     cout << setw(4) << endl;
 
-    if (num == 1) {
+    if (number == 1) {
         system("CLS");  // Clear the console
         game();         // Send user to the game
     }
-    if (num == 2) {
+    if (number == 2) {
         system("CLS");  // Clear the console
         rules();        // Send user to the rules
     }
-    if (num == 3) {
+    if (number == 3) {
         system("CLS");  //Clear the console
         info();         //Send user to info
     }
-    if (num == 4) {
+    if (number == 4) {
         system("CLS");  //Clear the console
         exit(0);        //End the programme
     }
