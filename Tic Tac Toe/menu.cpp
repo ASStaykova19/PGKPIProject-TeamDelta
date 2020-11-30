@@ -105,7 +105,7 @@ void rules()
     cout << "	4. If a player manages to place their symbol three times in a row (horizontally, vertically or diagonally) that player wins." << endl;
     cout << "	5. Start a new game and have fun!" << endl << endl;
 
-    cout << "Want to go back to the menu? - Y/N" << endl;   //check if user wants to go back to the menu
+    cout << "Do you want to go back to the menu? - Y/N" << endl;   //check if user wants to go back to the menu
 
     char answer;
     bool valid = false;
@@ -160,7 +160,7 @@ void info()
     cout << "      Tereza Opanska - Code Checker" << endl << endl;
     cout << "Thank you for playing our game! We hope you enjoy it!" << endl << endl;
 
-    cout << "Want to go back to the menu? - Y/N" << endl;   //check if user wants to go back to the menu
+    cout << "Do you want to go back to the menu? - Y/N" << endl;   //check if user wants to go back to the menu
 
     char answer;
     bool valid = false;
