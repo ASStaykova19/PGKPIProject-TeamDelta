@@ -19,7 +19,7 @@ void menu()
 {
     title();
 
-    //print out game menu
+    //print out game menu.
 
     int num;
     cout << setw(4) << endl;
