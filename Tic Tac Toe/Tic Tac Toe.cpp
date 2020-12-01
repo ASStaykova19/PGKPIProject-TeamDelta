@@ -11,6 +11,3 @@ int main()
     // Print out starting point
     menu();
 }
-
-
-
