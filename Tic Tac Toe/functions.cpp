@@ -40,7 +40,7 @@ void game()
             {
                 cout << endl << "Invalid input. Please enter a valid cell number." << endl << endl;
                 cin.clear();
-                cin.ignore();
+                cin.ignore(1000, '\n');
                 checkNum = false;
             }
         }

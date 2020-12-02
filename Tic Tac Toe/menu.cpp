@@ -65,7 +65,7 @@ void menu()
         {
             cout << endl << "Invalid input. Please enter a valid operation number." << endl << endl;
             cin.clear();
-            cin.ignore();
+            cin.ignore(1000, '\n');
             checkNum = false;
         }
     }
