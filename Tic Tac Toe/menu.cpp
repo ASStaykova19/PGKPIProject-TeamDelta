@@ -138,7 +138,8 @@ void rules()
 
         else   // Invalid user input
         {
-            cout << "You entered an invalid statement. Please try again." << endl;
+            cout << endl << "You entered an invalid statement. Please try again." << endl;
+            cin.ignore(1000, '\n');
             valid = false;
         }
     }
@@ -193,7 +194,8 @@ void info()
 
         else    // Invalid user input
         {
-            cout << "You entered an invalid statement. Please try again." << endl;
+            cout << endl << "You entered an invalid statement. Please try again." << endl;
+            cin.ignore(1000, '\n');
             valid = false;
         }
     }

@@ -26,7 +26,8 @@ void game()
             {
                 if (number > 9 || number < 1 || square[number] == 'X' || square[number] == 'O') // Invalid input
                 {
-                    cout << endl << "Invalid input. Please enter a valid cell number." << endl << endl;
+                    cout << endl << "Invalid input. Please enter a valid cell number." << endl;
+                    cin.ignore(1000, '\n');
                     checkNum = false;
                 }
 
@@ -38,7 +39,7 @@ void game()
 
             else    // The user entered a character
             {
-                cout << endl << "Invalid input. Please enter a valid cell number." << endl << endl;
+                cout << endl << "Invalid input. Please enter a valid cell number." << endl;
                 cin.clear();
                 cin.ignore(1000, '\n');
                 checkNum = false;
@@ -180,7 +181,8 @@ void returnToMenu() // Sends the user back to the menu
 
         else // Invalid input
         {
-            cout << "You entered an invalid statement. Please try again." << endl;
+            cout << endl << "You entered an invalid statement. Please try again." << endl;
+            cin.ignore(1000, '\n');
             valid = false;
         }
     }
