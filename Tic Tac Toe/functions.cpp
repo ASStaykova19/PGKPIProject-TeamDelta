@@ -18,15 +18,15 @@ void game()
         bool checkNum = false;
 
         cout << "Player" << player << "'s turn" << endl;
-        cout << "Choose a sell number:" << endl;
+        cout << "Choose a cell number:" << endl;
 
         while (checkNum == false)
         {
             if (cin >> number)
             {
-                if (number > 9 || number < 1 || square[number] == 'X' || square[number] == 'O') //Invalid input
+                if (number > 9 || number < 1 || square[number] == 'X' || square[number] == 'O') // Invalid input
                 {
-                    cout << endl << "Invalid input. Please enter a valid sell number." << endl << endl;
+                    cout << endl << "Invalid input. Please enter a valid cell number." << endl << endl;
                     checkNum = false;
                 }
 
@@ -38,7 +38,7 @@ void game()
 
             else    // The user entered a character
             {
-                cout << endl << "Invalid input. Please enter a valid sell number." << endl << endl;
+                cout << endl << "Invalid input. Please enter a valid cell number." << endl << endl;
                 cin.clear();
                 cin.ignore();
                 checkNum = false;
